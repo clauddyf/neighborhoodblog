@@ -1,4 +1,4 @@
-# neighborhoodblog(name still up for debate)
+# Neighborhoodblog(name still up for debate)
 An Application that will allow users to map and track new musicians and artist based off of their neighborhood
 
 ## Project Description
