@@ -1,0 +1,2 @@
+class Hbn < ApplicationRecord
+end
