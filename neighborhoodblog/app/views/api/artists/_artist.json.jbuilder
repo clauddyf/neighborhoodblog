@@ -1,0 +1,1 @@
+json.extract! artist, :id, :rap_name, :birth_name
