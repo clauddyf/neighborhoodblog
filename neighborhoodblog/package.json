@@ -1,5 +1,7 @@
 {
   "name": "neighborhoodblog",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react": "^17.0.1"
+  }
 }
