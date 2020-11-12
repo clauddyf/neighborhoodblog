@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     resources :cities, only: [:show,:index]
     resources :hbns, only: [:show, :index]
     resources :artist, only: [:show,:index]
-    resource :session, only: [:create, :destroy, :show]
+    resources :session, only: [:create, :destroy, :show]
     resources :users, only: [:create, :update, :show, :index]
   end
+  root "static_pages#root"
 end
