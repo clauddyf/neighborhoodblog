@@ -2,10 +2,11 @@
   "name": "neighborhoodblog",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
+    "bootstrap": "^4.5.3",
     "css": "^3.0.0",
     "css-loader": "^5.0.1",
     "loader": "^2.1.1",
@@ -47,5 +48,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+  }
 }
