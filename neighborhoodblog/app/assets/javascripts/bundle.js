@@ -91,6 +91,173 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
+/***/ "./frontend/actions/clear_errors.js":
+/*!******************************************!*\
+  !*** ./frontend/actions/clear_errors.js ***!
+  \******************************************/
+/*! namespace exports */
+/*! export CLEAR_ERRORS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export clearErrors [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CLEAR_ERRORS": () => /* binding */ CLEAR_ERRORS,
+/* harmony export */   "clearErrors": () => /* binding */ clearErrors
+/* harmony export */ });
+var CLEAR_ERRORS = 'CLEAR_ERRORS';
+var clearErrors = function clearErrors(errors) {
+  return {
+    type: CLEAR_ERRORS,
+    errors: errors
+  };
+};
+
+/***/ }),
+
+/***/ "./frontend/actions/session_actions.js":
+/*!*********************************************!*\
+  !*** ./frontend/actions/session_actions.js ***!
+  \*********************************************/
+/*! namespace exports */
+/*! export LOGOUT_CURRENT_USER [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export RECEIVE_CURRENT_USER [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export RECEIVE_SESSION_ERRORS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export login [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export logout [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export logoutCurrentUser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export receiveCurrentUser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export receiveErrors [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export signup [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RECEIVE_CURRENT_USER": () => /* binding */ RECEIVE_CURRENT_USER,
+/* harmony export */   "LOGOUT_CURRENT_USER": () => /* binding */ LOGOUT_CURRENT_USER,
+/* harmony export */   "RECEIVE_SESSION_ERRORS": () => /* binding */ RECEIVE_SESSION_ERRORS,
+/* harmony export */   "receiveCurrentUser": () => /* binding */ receiveCurrentUser,
+/* harmony export */   "logoutCurrentUser": () => /* binding */ logoutCurrentUser,
+/* harmony export */   "receiveErrors": () => /* binding */ receiveErrors,
+/* harmony export */   "signup": () => /* binding */ signup,
+/* harmony export */   "login": () => /* binding */ login,
+/* harmony export */   "logout": () => /* binding */ logout
+/* harmony export */ });
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+;
+var RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
+var LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
+var RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
+var receiveCurrentUser = function receiveCurrentUser(currentUser) {
+  return {
+    type: RECEIVE_CURRENT_USER,
+    currentUser: currentUser
+  };
+};
+var logoutCurrentUser = function logoutCurrentUser() {
+  return {
+    type: LOGOUT_CURRENT_USER
+  };
+};
+var receiveErrors = function receiveErrors(errors) {
+  return {
+    type: RECEIVE_SESSION_ERRORS,
+    errors: errors
+  };
+};
+var signup = function signup(user) {
+  return function (dispatch) {
+    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(user).then(function (user) {
+      return dispatch(receiveCurrentUser(user));
+    }, function (err) {
+      return dispatch(receiveErrors(err.responseJSON));
+    });
+  };
+};
+var login = function login(user) {
+  return function (dispatch) {
+    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(user).then(function (user) {
+      return dispatch(receiveCurrentUser(user));
+    }, function (err) {
+      return dispatch(receiveErrors(err.responseJSON));
+    });
+  };
+};
+var logout = function logout() {
+  return function (dispatch) {
+    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().then(function (user) {
+      return dispatch(logoutCurrentUser());
+    });
+  };
+};
+
+/***/ }),
+
+/***/ "./frontend/actions/user_actions.js":
+/*!******************************************!*\
+  !*** ./frontend/actions/user_actions.js ***!
+  \******************************************/
+/*! namespace exports */
+/*! export RECEIVE_USER [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export RECEIVE_USERS [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export fetchUser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export fetchUsers [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export receiveUser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export receiveUsers [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RECEIVE_USER": () => /* binding */ RECEIVE_USER,
+/* harmony export */   "RECEIVE_USERS": () => /* binding */ RECEIVE_USERS,
+/* harmony export */   "receiveUser": () => /* binding */ receiveUser,
+/* harmony export */   "receiveUsers": () => /* binding */ receiveUsers,
+/* harmony export */   "fetchUser": () => /* binding */ fetchUser,
+/* harmony export */   "fetchUsers": () => /* binding */ fetchUsers
+/* harmony export */ });
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+;
+var RECEIVE_USER = 'RECEIVE_USER';
+var RECEIVE_USERS = 'RECEIVE_USERS';
+var receiveUser = function receiveUser(user) {
+  return {
+    type: RECEIVE_USER,
+    user: user
+  };
+};
+var receiveUsers = function receiveUsers(users) {
+  return {
+    type: RECEIVE_USERS,
+    users: users
+  };
+};
+var fetchUser = function fetchUser(id) {
+  return function (dispatch) {
+    Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(id).then(function (user) {
+      return dispatch(receiveUser(user));
+    });
+  };
+};
+var fetchUsers = function fetchUsers() {
+  return function (dispatch) {
+    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().then(function (users) {
+      console.log(users);
+      dispatch(receiveUsers(users));
+    });
+  };
+};
+
+/***/ }),
+
 /***/ "./frontend/components/app.jsx":
 /*!*************************************!*\
   !*** ./frontend/components/app.jsx ***!
@@ -302,7 +469,7 @@ var rootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_3__.combineReducers)({
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -310,8 +477,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/clear_errors'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/session_actions */ "./frontend/actions/session_actions.js");
+/* harmony import */ var _actions_clear_errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/clear_errors */ "./frontend/actions/clear_errors.js");
 ;
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
@@ -320,13 +487,13 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
   Object.freeze(state);
 
   switch (action.type) {
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_SESSION_ERRORS:
       return action.errors;
 
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_CURRENT_USER:
       return [];
 
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/clear_errors'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_clear_errors__WEBPACK_IMPORTED_MODULE_1__.CLEAR_ERRORS:
       return [];
 
     default:
@@ -343,7 +510,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -351,7 +518,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/session_actions */ "./frontend/actions/session_actions.js");
 ;
 
 var _nullUser = Object.freeze({
@@ -364,13 +531,13 @@ var sessionReducer = function sessionReducer() {
   Object.freeze(state);
 
   switch (action.type) {
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_CURRENT_USER:
       return {
         id: action.currentUser.id,
         manUp: action.currentUser
       };
 
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/session_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_session_actions__WEBPACK_IMPORTED_MODULE_0__.LOGOUT_CURRENT_USER:
       return _nullUser;
 
     default:
@@ -389,7 +556,7 @@ var sessionReducer = function sessionReducer() {
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -397,7 +564,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/user_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _actions_user_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/user_actions */ "./frontend/actions/user_actions.js");
 ;
 
 var usersReducer = function usersReducer() {
@@ -407,13 +574,13 @@ var usersReducer = function usersReducer() {
   var newstate = Object.assign({}, state);
 
   switch (action.type) {
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/user_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_user_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_USER:
       debugger; // newstate[action.user.id] = action.user;
       // return newstate;
 
       return action.user;
 
-    case Object(function webpackMissingModule() { var e = new Error("Cannot find module '../actions/user_actions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()):
+    case _actions_user_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_USERS:
       return action.users;
 
     default:
