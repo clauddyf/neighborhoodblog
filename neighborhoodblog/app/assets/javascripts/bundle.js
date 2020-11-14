@@ -133,7 +133,7 @@ var clearErrors = function clearErrors(errors) {
 /*! export receiveErrors [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export signup [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "login": () => /* binding */ login,
 /* harmony export */   "logout": () => /* binding */ logout
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/session_api_util */ "./frontend/util/session_api_util.js");
 ;
 var RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 var LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
@@ -173,7 +173,7 @@ var receiveErrors = function receiveErrors(errors) {
 };
 var signup = function signup(user) {
   return function (dispatch) {
-    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(user).then(function (user) {
+    return _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__.signup(user).then(function (user) {
       return dispatch(receiveCurrentUser(user));
     }, function (err) {
       return dispatch(receiveErrors(err.responseJSON));
@@ -182,7 +182,7 @@ var signup = function signup(user) {
 };
 var login = function login(user) {
   return function (dispatch) {
-    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(user).then(function (user) {
+    return _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__.login(user).then(function (user) {
       return dispatch(receiveCurrentUser(user));
     }, function (err) {
       return dispatch(receiveErrors(err.responseJSON));
@@ -191,7 +191,7 @@ var login = function login(user) {
 };
 var logout = function logout() {
   return function (dispatch) {
-    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/session_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().then(function (user) {
+    return _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__.logout().then(function (user) {
       return dispatch(logoutCurrentUser());
     });
   };
@@ -211,7 +211,7 @@ var logout = function logout() {
 /*! export receiveUser [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export receiveUsers [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -224,7 +224,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "fetchUser": () => /* binding */ fetchUser,
 /* harmony export */   "fetchUsers": () => /* binding */ fetchUsers
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _util_user_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/user_api_util */ "./frontend/util/user_api_util.js");
 ;
 var RECEIVE_USER = 'RECEIVE_USER';
 var RECEIVE_USERS = 'RECEIVE_USERS';
@@ -242,14 +242,14 @@ var receiveUsers = function receiveUsers(users) {
 };
 var fetchUser = function fetchUser(id) {
   return function (dispatch) {
-    Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(id).then(function (user) {
+    (0,_util_user_api_util__WEBPACK_IMPORTED_MODULE_0__.getUser)(id).then(function (user) {
       return dispatch(receiveUser(user));
     });
   };
 };
 var fetchUsers = function fetchUsers() {
   return function (dispatch) {
-    return Object(function webpackMissingModule() { var e = new Error("Cannot find module '../util/user_api_util'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().then(function (users) {
+    return (0,_util_user_api_util__WEBPACK_IMPORTED_MODULE_0__.getUsers)().then(function (users) {
       console.log(users);
       dispatch(receiveUsers(users));
     });
@@ -632,6 +632,84 @@ var configureStore = function configureStore() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (configureStore);
+
+/***/ }),
+
+/***/ "./frontend/util/session_api_util.js":
+/*!*******************************************!*\
+  !*** ./frontend/util/session_api_util.js ***!
+  \*******************************************/
+/*! namespace exports */
+/*! export login [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export logout [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export signup [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "login": () => /* binding */ login,
+/* harmony export */   "signup": () => /* binding */ signup,
+/* harmony export */   "logout": () => /* binding */ logout
+/* harmony export */ });
+var login = function login(user) {
+  return $.ajax({
+    url: '/api/session',
+    method: 'post',
+    data: {
+      user: user
+    }
+  });
+};
+var signup = function signup(user) {
+  return $.ajax({
+    url: '/api/users',
+    method: 'post',
+    data: {
+      user: user
+    }
+  });
+};
+var logout = function logout() {
+  return $.ajax({
+    url: '/api/session',
+    method: 'DELETE'
+  });
+};
+
+/***/ }),
+
+/***/ "./frontend/util/user_api_util.js":
+/*!****************************************!*\
+  !*** ./frontend/util/user_api_util.js ***!
+  \****************************************/
+/*! namespace exports */
+/*! export getUser [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export getUsers [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getUser": () => /* binding */ getUser,
+/* harmony export */   "getUsers": () => /* binding */ getUsers
+/* harmony export */ });
+var getUser = function getUser(id) {
+  return $.ajax({
+    url: "/api/users/".concat(id),
+    method: 'get'
+  });
+};
+var getUsers = function getUsers() {
+  return $.ajax({
+    method: 'get',
+    url: 'api/users'
+  });
+};
 
 /***/ }),
 
