@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Neighborhoodblog</title>
+    <title>Hoodblog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,6 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <script type="text/javascript">
+    window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
+  </script>
   <body>
     <%= yield %>
   </body>
