@@ -11,13 +11,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  # <script type="text/javascript">
-  #   window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
-  # </script>
+  
   <body>
-    # <script type="text/javascript">
-    #   window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
-    # </script>
+   
     <%= yield %>
     
   </body>
