@@ -1,18 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./frontend/components/maps/darmmode.json":
-/*!************************************************!*\
-  !*** ./frontend/components/maps/darmmode.json ***!
-  \************************************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements:  */
-/***/ (() => {
-
-throw new Error("Module parse failed: Unexpected token e in JSON at position 8 while parsing near '[\n    { elementType: \"geomet...'\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\nSyntaxError: Unexpected token e in JSON at position 8 while parsing near '[\n    { elementType: \"geomet...'\n    at JSON.parse (<anonymous>)\n    at parseJson (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/json-parse-better-errors/index.js:7:17)\n    at JsonParser.parse (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/webpack/lib/json/JsonParser.js:42:7)\n    at /Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/webpack/lib/NormalModule.js:843:26\n    at processResult (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/webpack/lib/NormalModule.js:624:11)\n    at /Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/webpack/lib/NormalModule.js:675:5\n    at /Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/loader-runner/lib/LoaderRunner.js:404:3\n    at iterateNormalLoaders (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/loader-runner/lib/LoaderRunner.js:233:10)\n    at Array.<anonymous> (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/loader-runner/lib/LoaderRunner.js:224:4)\n    at runCallbacks (/Users/claudiussolomon/Desktop/neighborhoodblog/neighborhoodblog/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:24:49)");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -329,10 +317,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _darmmode_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./darmmode.json */ "./frontend/components/maps/darmmode.json");
-/* harmony import */ var _darmmode_json__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_darmmode_json__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -356,7 +342,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
-
+ // import styleOne from './darmmode.json'
 
 var mapStyles = [{
   elementType: "geometry",
@@ -482,10 +468,13 @@ var MapContainer = /*#__PURE__*/function (_Component) {
   _createClass(MapContainer, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__.Map, {
+      // debugger
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_1__.Map, {
         google: this.props.google,
         zoom: 14,
-        style: Object.keys(mapStyles),
+        style: {
+          mapStyles: mapStyles
+        },
         initialCenter: {
           lat: 38.9072,
           lng: -77.0369
@@ -496,7 +485,7 @@ var MapContainer = /*#__PURE__*/function (_Component) {
 
   return MapContainer;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_2__.GoogleApiWrapper)({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_1__.GoogleApiWrapper)({
   apiKey: "".concat(window.googleAPIKey)
 })(MapContainer));
 

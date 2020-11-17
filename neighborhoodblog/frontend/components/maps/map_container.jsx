@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
-import styleOne from './darmmode.json'
+// import styleOne from './darmmode.json'
 const mapStyles = 
     [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -92,11 +92,12 @@ const mapStyles =
 
 export class MapContainer extends Component {
     render() {
+        // debugger
         return (
             <Map
                 google={this.props.google}
                 zoom={14}
-                style={Object.keys(mapStyles)}
+                style={{mapStyles}}
                 initialCenter={
                     {
                         lat: 38.9072,
