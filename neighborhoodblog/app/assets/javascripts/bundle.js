@@ -1,6 +1,179 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./frontend/components/maps/darmmode.json":
+/*!************************************************!*\
+  !*** ./frontend/components/maps/darmmode.json ***!
+  \************************************************/
+/*! default exports */
+/*! export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 1 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 10 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 11 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 12 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 13 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 14 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 15 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 16 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 17 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 2 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 3 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 4 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 5 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 6 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 7 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 8 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! export 9 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export elementType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export featureType [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export stylers [provided] [no usage info] [missing usage info prevents renaming] */
+/*!     export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       export color [provided] [no usage info] [missing usage info prevents renaming] */
+/*!       other exports [not provided] [no usage info] */
+/*!     other exports [not provided] [no usage info] */
+/*!   other exports [not provided] [no usage info] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse("[{\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#242f3e\"}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"color\":\"#242f3e\"}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#746855\"}]},{\"featureType\":\"administrative.locality\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#d59563\"}]},{\"featureType\":\"poi\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#d59563\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#263c3f\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#6b9a76\"}]},{\"featureType\":\"road\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#38414e\"}]},{\"featureType\":\"road\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#212a37\"}]},{\"featureType\":\"road\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#9ca5b3\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#746855\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry.stroke\",\"stylers\":[{\"color\":\"#1f2835\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#f3d19c\"}]},{\"featureType\":\"transit\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#2f3948\"}]},{\"featureType\":\"transit.station\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#d59563\"}]},{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#17263c\"}]},{\"featureType\":\"water\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#515c6d\"}]},{\"featureType\":\"water\",\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"color\":\"#17263c\"}]}]");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -317,8 +490,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _darmmode_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./darmmode.json */ "./frontend/components/maps/darmmode.json");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -342,7 +516,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
- // import styleOne from './darmmode.json'
+
 
 var mapStyles = [{
   elementType: "geometry",
@@ -454,6 +628,365 @@ var mapStyles = [{
 //     height: '100%',
 // }
 
+var styleThree = [{
+  "featureType": "all",
+  "elementType": "all",
+  "stylers": [{
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "all",
+  "elementType": "labels",
+  "stylers": [{
+    "visibility": "off"
+  }, {
+    "saturation": "-100"
+  }]
+}, {
+  "featureType": "all",
+  "elementType": "labels.text.fill",
+  "stylers": [{
+    "saturation": 36
+  }, {
+    "color": "#000000"
+  }, {
+    "lightness": 40
+  }, {
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "all",
+  "elementType": "labels.text.stroke",
+  "stylers": [{
+    "visibility": "off"
+  }, {
+    "color": "#000000"
+  }, {
+    "lightness": 16
+  }]
+}, {
+  "featureType": "all",
+  "elementType": "labels.icon",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "administrative",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 20
+  }]
+}, {
+  "featureType": "administrative",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 17
+  }, {
+    "weight": 1.2
+  }]
+}, {
+  "featureType": "landscape",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 20
+  }]
+}, {
+  "featureType": "landscape",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#4d6059"
+  }]
+}, {
+  "featureType": "landscape",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#4d6059"
+  }]
+}, {
+  "featureType": "landscape.natural",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#4d6059"
+  }]
+}, {
+  "featureType": "poi",
+  "elementType": "geometry",
+  "stylers": [{
+    "lightness": 21
+  }]
+}, {
+  "featureType": "poi",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#4d6059"
+  }]
+}, {
+  "featureType": "poi",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#4d6059"
+  }]
+}, {
+  "featureType": "road",
+  "elementType": "geometry",
+  "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "road",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "road.highway",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#7f8d89"
+  }, {
+    "lightness": 17
+  }]
+}, {
+  "featureType": "road.highway",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#7f8d89"
+  }, {
+    "lightness": 29
+  }, {
+    "weight": 0.2
+  }]
+}, {
+  "featureType": "road.arterial",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 18
+  }]
+}, {
+  "featureType": "road.arterial",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "road.arterial",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "road.local",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 16
+  }]
+}, {
+  "featureType": "road.local",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "road.local",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#7f8d89"
+  }]
+}, {
+  "featureType": "transit",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#000000"
+  }, {
+    "lightness": 19
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "all",
+  "stylers": [{
+    "color": "#2b3638"
+  }, {
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#2b3638"
+  }, {
+    "lightness": 17
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#24282b"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#24282b"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "labels",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "labels.text",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "labels.text.fill",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "labels.text.stroke",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "water",
+  "elementType": "labels.icon",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}];
+var styleTwo = [{
+  "featureType": "water",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#e9e9e9"
+  }, {
+    "lightness": 17
+  }]
+}, {
+  "featureType": "landscape",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#f5f5f5"
+  }, {
+    "lightness": 20
+  }]
+}, {
+  "featureType": "road.highway",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#ffffff"
+  }, {
+    "lightness": 17
+  }]
+}, {
+  "featureType": "road.highway",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#ffffff"
+  }, {
+    "lightness": 29
+  }, {
+    "weight": 0.2
+  }]
+}, {
+  "featureType": "road.arterial",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#ffffff"
+  }, {
+    "lightness": 18
+  }]
+}, {
+  "featureType": "road.local",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#ffffff"
+  }, {
+    "lightness": 16
+  }]
+}, {
+  "featureType": "poi",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#f5f5f5"
+  }, {
+    "lightness": 21
+  }]
+}, {
+  "featureType": "poi.park",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#dedede"
+  }, {
+    "lightness": 21
+  }]
+}, {
+  "elementType": "labels.text.stroke",
+  "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#ffffff"
+  }, {
+    "lightness": 16
+  }]
+}, {
+  "elementType": "labels.text.fill",
+  "stylers": [{
+    "saturation": 36
+  }, {
+    "color": "#333333"
+  }, {
+    "lightness": 40
+  }]
+}, {
+  "elementType": "labels.icon",
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "transit",
+  "elementType": "geometry",
+  "stylers": [{
+    "color": "#f2f2f2"
+  }, {
+    "lightness": 19
+  }]
+}, {
+  "featureType": "administrative",
+  "elementType": "geometry.fill",
+  "stylers": [{
+    "color": "#fefefe"
+  }, {
+    "lightness": 20
+  }]
+}, {
+  "featureType": "administrative",
+  "elementType": "geometry.stroke",
+  "stylers": [{
+    "color": "#fefefe"
+  }, {
+    "lightness": 17
+  }, {
+    "weight": 1.2
+  }]
+}];
 var MapContainer = /*#__PURE__*/function (_Component) {
   _inherits(MapContainer, _Component);
 
@@ -468,13 +1001,12 @@ var MapContainer = /*#__PURE__*/function (_Component) {
   _createClass(MapContainer, [{
     key: "render",
     value: function render() {
-      // debugger
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_1__.Map, {
+      debugger;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__.Map, {
         google: this.props.google,
         zoom: 14,
-        style: {
-          mapStyles: mapStyles
-        },
+        styles: mapStyles // mapId='f56a8e56c899ef4c'
+        ,
         initialCenter: {
           lat: 38.9072,
           lng: -77.0369
@@ -485,7 +1017,7 @@ var MapContainer = /*#__PURE__*/function (_Component) {
 
   return MapContainer;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_1__.GoogleApiWrapper)({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_2__.GoogleApiWrapper)({
   apiKey: "".concat(window.googleAPIKey)
 })(MapContainer));
 
