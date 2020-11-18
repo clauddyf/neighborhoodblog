@@ -17,7 +17,7 @@ const mapStyles =
             elementType: "labels",
             stylers: [
                 {
-                    "visibility": "on"
+                    "visibility": "off"
                 },
                 {
                     "saturation": "-100"
@@ -62,7 +62,7 @@ const mapStyles =
             elementType: "labels.icon",
             stylers: [
                 {
-                    "visibility": "on"
+                    "visibility": "off"
                 }
             ]
         },

@@ -354,7 +354,7 @@ var mapStyles = [{
   featureType: "all",
   elementType: "labels",
   stylers: [{
-    "visibility": "on"
+    "visibility": "off"
   }, {
     "saturation": "-100"
   }]
@@ -384,7 +384,7 @@ var mapStyles = [{
   featureType: "all",
   elementType: "labels.icon",
   stylers: [{
-    "visibility": "on"
+    "visibility": "off"
   }]
 }, {
   featureType: "administrative",
