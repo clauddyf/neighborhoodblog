@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
-import Styles from './mapstyles'
+
 
 export class MapShow extends Component {
-    // constructor(props){
-    //     super(props);
-    //     this.styles = Styles.bind(this)
-    //     debugger
-    // }
-    // componentDidMount(){
-
-    // }
+    constructor(props){
+        debugger
+        super(props);
+        this.styles = Styles.bind(this)
+    }
+    componentDidMount(){
+        this.props.fetchStyle(this.props.match.params.id)
+    }
     render() {
         debugger
         
@@ -19,7 +19,7 @@ export class MapShow extends Component {
             <Map
                 google={this.props.google}
                 zoom={14}
-                styles={}
+                styles={this.props.currentStyle}
                 initialCenter={
                     {
                         lat: 38.9072,
