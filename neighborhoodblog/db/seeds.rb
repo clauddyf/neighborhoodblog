@@ -27,7 +27,7 @@ require 'csv'
 # puts "successfuly seeded first artist"
 
 csv_text = File.read(Rails.root.join('db','lib','firstseed.csv'))
-csv = CSV.parse)csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 csv.each do |row|
     t.name = row['name']
     t.json = row['json']
