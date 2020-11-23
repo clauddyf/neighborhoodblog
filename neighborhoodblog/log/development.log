@@ -1037,3 +1037,7 @@ Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.0ms)
   ↳ db/seeds.rb:25
   [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
   [1m[36mHbn Load (0.6ms)[0m  [1m[34mSELECT "hbns".* FROM "hbns"[0m
+  [1m[36mArtist Load (6.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mHbn Load (43.6ms)[0m  [1m[34mSELECT "hbns".* FROM "hbns"[0m
+  [1m[36mCity Load (42.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
