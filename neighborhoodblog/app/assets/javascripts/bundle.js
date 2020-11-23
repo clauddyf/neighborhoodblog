@@ -276,7 +276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _maps_map_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./maps/map_container */ "./frontend/components/maps/map_container.jsx");
+/* harmony import */ var _maps_map_show__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./maps/map_show */ "./frontend/components/maps/map_show.jsx");
 ;
 
 
@@ -291,7 +291,7 @@ var App = function App() {
     className: "logo-name"
   }, "Neighborhood Blog"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
     path: "/",
-    component: _maps_map_container__WEBPACK_IMPORTED_MODULE_1__.default
+    component: _maps_map_show__WEBPACK_IMPORTED_MODULE_1__.default
   })));
 };
 
@@ -299,12 +299,12 @@ var App = function App() {
 
 /***/ }),
 
-/***/ "./frontend/components/maps/map_container.jsx":
-/*!****************************************************!*\
-  !*** ./frontend/components/maps/map_container.jsx ***!
-  \****************************************************/
+/***/ "./frontend/components/maps/map_show.jsx":
+/*!***********************************************!*\
+  !*** ./frontend/components/maps/map_show.jsx ***!
+  \***********************************************/
 /*! namespace exports */
-/*! export MapContainer [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export MapShow [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
@@ -313,13 +313,13 @@ var App = function App() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MapContainer": () => /* binding */ MapContainer,
+/* harmony export */   "MapShow": () => /* binding */ MapShow,
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
 /* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _mapstyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mapstyles */ "./frontend/components/maps/mapstyles.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './mapstyles'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -592,27 +592,26 @@ var mapStyles = [{
 //     height: '100%',
 // }
 
-var MapContainer = /*#__PURE__*/function (_Component) {
-  _inherits(MapContainer, _Component);
+var MapShow = /*#__PURE__*/function (_Component) {
+  _inherits(MapShow, _Component);
 
-  var _super = _createSuper(MapContainer);
+  var _super = _createSuper(MapShow);
 
-  function MapContainer(props) {
-    var _this;
+  function MapShow() {
+    _classCallCheck(this, MapShow);
 
-    _classCallCheck(this, MapContainer);
-
-    _this = _super.call(this, props);
-    _this.styles = _mapstyles__WEBPACK_IMPORTED_MODULE_1__.default.bind(_assertThisInitialized(_this));
-    debugger;
-    return _this;
+    return _super.apply(this, arguments);
   }
 
-  _createClass(MapContainer, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
+  _createClass(MapShow, [{
     key: "render",
+    // constructor(props){
+    //     super(props);
+    //     this.styles = Styles.bind(this)
+    //     debugger
+    // }
+    // componentDidMount(){
+    // }
     value: function render() {
       debugger; // const style = this.styles
 
@@ -628,542 +627,11 @@ var MapContainer = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return MapContainer;
+  return MapShow;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_2__.GoogleApiWrapper)({
   apiKey: "".concat(window.googleAPIKey)
-})(MapContainer));
-
-/***/ }),
-
-/***/ "./frontend/components/maps/mapstyles.js":
-/*!***********************************************!*\
-  !*** ./frontend/components/maps/mapstyles.js ***!
-  \***********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-// import React from 'react';
-var MapStyles = /*#__PURE__*/function () {
-  function MapStyles() {
-    _classCallCheck(this, MapStyles);
-  }
-
-  _createClass(MapStyles, [{
-    key: "mapOne",
-    value: function mapOne() {
-      debugger;
-      [{
-        featureType: "all",
-        elementType: "all",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels",
-        stylers: [{
-          "visibility": "off"
-        }, {
-          "saturation": "-100"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.text.fill",
-        stylers: [{
-          "saturation": 36
-        }, {
-          "color": "#000000"
-        }, {
-          "lightness": 40
-        }, {
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.text.stroke",
-        stylers: [{
-          "visibility": "on"
-        }, {
-          "color": "#000000"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.icon",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "administrative",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        featureType: "administrative",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 17
-        }, {
-          "weight": 1.2
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "landscape.natural",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry",
-        stylers: [{
-          "lightness": 21
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{
-          "visibility": "on"
-        }, {
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.highway",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }, {
-          "lightness": 29
-        }, {
-          "weight": 0.2
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 18
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 19
-        }]
-      }, {
-        featureType: "water",
-        elementType: "all",
-        stylers: [{
-          "color": "#2b3638"
-        }, {
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#2b3638"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#24282b"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#24282b"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text.fill",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text.stroke",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.icon",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }];
-    }
-  }, {
-    key: "assassinsMap",
-    value: function assassinsMap() {
-      [{
-        featureType: "all",
-        elementType: "all",
-        stylers: [{
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels",
-        stylers: [{
-          "visibility": "off"
-        }, {
-          "saturation": "-100"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.text.fill",
-        stylers: [{
-          "saturation": 36
-        }, {
-          "color": "#000000"
-        }, {
-          "lightness": 40
-        }, {
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.text.stroke",
-        stylers: [{
-          "visibility": "off"
-        }, {
-          "color": "#000000"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        featureType: "all",
-        elementType: "labels.icon",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "administrative",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        featureType: "administrative",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 17
-        }, {
-          "weight": 1.2
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 20
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "landscape",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "landscape.natural",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry",
-        stylers: [{
-          "lightness": 21
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "poi",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#4d6059"
-        }]
-      }, {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [{
-          "visibility": "on"
-        }, {
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.highway",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        featureType: "road.highway",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }, {
-          "lightness": 29
-        }, {
-          "weight": 0.2
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 18
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.arterial",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 16
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "road.local",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#7f8d89"
-        }]
-      }, {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#000000"
-        }, {
-          "lightness": 19
-        }]
-      }, {
-        featureType: "water",
-        elementType: "all",
-        stylers: [{
-          "color": "#2b3638"
-        }, {
-          "visibility": "on"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [{
-          "color": "#2b3638"
-        }, {
-          "lightness": 17
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry.fill",
-        stylers: [{
-          "color": "#24282b"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "geometry.stroke",
-        stylers: [{
-          "color": "#24282b"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text.fill",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.text.stroke",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }, {
-        featureType: "water",
-        elementType: "labels.icon",
-        stylers: [{
-          "visibility": "off"
-        }]
-      }];
-    }
-  }]);
-
-  return MapStyles;
-}();
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MapStyles);
+})(MapShow));
 
 /***/ }),
 

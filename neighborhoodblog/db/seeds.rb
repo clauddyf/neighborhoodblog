@@ -26,12 +26,14 @@ require 'csv'
 # glizzy.save!
 # puts "successfuly seeded first artist"
 
-csv_text = File.read(Rails.root.join('db','lib','firstseed.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-csv.each do |row|
-    t.name = row['name']
-    t.json = row['json']
-    t.save!
-    puts "#{t.name} saved"
-end
-puts "There are now #{MapStyles.count} rows in the MapStyles table"
+# csv_text = File.read(Rails.root.join('db','lib','firstseed.csv'))
+# csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+# csv.each do |row|
+#     t = Style.new
+
+#     t.name = row['Name']
+#     t.json = row['JSON']
+#     t.save!
+#     puts "#{t.name} saved"
+# end
+# puts "There are now #{Style.count} rows in the MapStyles table"

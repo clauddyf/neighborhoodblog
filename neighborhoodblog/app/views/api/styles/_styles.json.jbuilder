@@ -1,0 +1,1 @@
+json.extract! style, :name, :json

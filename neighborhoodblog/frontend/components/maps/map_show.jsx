@@ -381,15 +381,15 @@ const mapStyles =
     
 
 
-export class MapContainer extends Component {
-    constructor(props){
-        super(props);
-        this.styles = Styles.bind(this)
-        debugger
-    }
-    componentDidMount(){
-        
-    }
+export class MapShow extends Component {
+    // constructor(props){
+    //     super(props);
+    //     this.styles = Styles.bind(this)
+    //     debugger
+    // }
+    // componentDidMount(){
+
+    // }
     render() {
         debugger
         // const style = this.styles
@@ -413,5 +413,5 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper({
     
     apiKey: `${window.googleAPIKey}`
-})(MapContainer);
+})(MapShow);
 
