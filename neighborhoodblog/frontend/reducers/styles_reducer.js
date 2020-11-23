@@ -1,15 +1,19 @@
 import { RECEIVE_STYLE } from '../actions/styles_actions';
+import merge from 'lodash/merge';
 
 
-const StylesReducer = (state = {}, action) => {
-    Object.freeze(state);
-    let newstate = Object.assign({}, state);
+const StylesReducer = (oldState = {}, action) => {
+    // debugger
+    Object.freeze(oldState);
+    // let newstate = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_STYLE:
             debugger
-            return action.style
+            let newState = merge({}, oldState, { [action.style.id]: action.style });
+            debugger
+            return newState
         default:
-            return state;
+            return oldState;
     }
 };
 

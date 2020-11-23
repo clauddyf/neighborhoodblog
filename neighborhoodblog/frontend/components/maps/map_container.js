@@ -8,7 +8,7 @@ import MapShow from './map_show';
 const mSTP = (state, ownProps) => {
     debugger 
     return ({
-        currentStyle: state.entities.style
+        currentStyle: state.entities.styles
     })
 }
 

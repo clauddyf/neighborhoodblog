@@ -16,7 +16,7 @@ export class MapShow extends Component {
         // if(this.pulledUp){
         //     this.props.fetchStyle(this.props.match.params.id)
         // }
-        this.props.fetchStyle(this.props.match.params.id)
+        this.props.fetchStyle(1)
         debugger
     }
 

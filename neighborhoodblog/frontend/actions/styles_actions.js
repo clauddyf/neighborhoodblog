@@ -8,5 +8,6 @@ export const receiveStyle = (style) => ({
 });
 
 export const fetchStyle = (id) => dispatch => {
+    debugger 
     getStyle(id).then((style) => dispatch(receiveStyle(style)));
 };
