@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :artist, only: [:show,:index]
     resources :session, only: [:create, :destroy, :show]
     resources :users, only: [:create, :update, :show, :index]
+    resources :styles, only[:show]
   end
   root "static_pages#root"
 end
