@@ -6,12 +6,14 @@ import MapShow from './map_show';
 
 
 const mSTP = (state, ownProps) => {
+    debugger 
     return ({
-        currentStyle: state.entities.style[ownProps.match.params.id]
+        currentStyle: state.entities.style
     })
 }
 
 const mDTP = dispatch => {
+    debugger 
     return {
         fetchStyle: style => dispatch(fetchStyle(style)),
     };

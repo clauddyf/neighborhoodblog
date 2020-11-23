@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _maps_map_show__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./maps/map_show */ "./frontend/components/maps/map_show.jsx");
+/* harmony import */ var _maps_map_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./maps/map_container */ "./frontend/components/maps/map_container.js");
 ;
 
 
@@ -329,11 +329,55 @@ var App = function App() {
     className: "logo-name"
   }, "Neighborhood Blog"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, {
     path: "/",
-    component: _maps_map_show__WEBPACK_IMPORTED_MODULE_1__.default
+    component: _maps_map_container__WEBPACK_IMPORTED_MODULE_1__.default
   })));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.withRouter)(App));
+
+/***/ }),
+
+/***/ "./frontend/components/maps/map_container.js":
+/*!***************************************************!*\
+  !*** ./frontend/components/maps/map_container.js ***!
+  \***************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_styles_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/styles_actions */ "./frontend/actions/styles_actions.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _map_show__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./map_show */ "./frontend/components/maps/map_show.jsx");
+;
+
+
+
+
+var mSTP = function mSTP(state, ownProps) {
+  debugger;
+  return {
+    currentStyle: state.entities.style
+  };
+};
+
+var mDTP = function mDTP(dispatch) {
+  debugger;
+  return {
+    fetchStyle: function fetchStyle(style) {
+      return dispatch((0,_actions_styles_actions__WEBPACK_IMPORTED_MODULE_1__.fetchStyle)(style));
+    }
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(mSTP, mDTP)(_map_show__WEBPACK_IMPORTED_MODULE_2__.default)));
 
 /***/ }),
 
@@ -391,17 +435,28 @@ var MapShow = /*#__PURE__*/function (_Component) {
 
     _classCallCheck(this, MapShow);
 
-    debugger;
     _this = _super.call(this, props);
-    _this.styles = Styles.bind(_assertThisInitialized(_this));
+    debugger; // this.styles = Styles.bind(this)
+    // this.pulledUp = false;
+
     return _this;
   }
 
   _createClass(MapShow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      debugger; // this.pulledUp = true;
+      // if(this.pulledUp){
+      //     this.props.fetchStyle(this.props.match.params.id)
+      // }
+
       this.props.fetchStyle(this.props.match.params.id);
-    }
+      debugger;
+    } // componentWillUnmount(){
+    //     debugger
+    //     this.pulledUp = false;
+    // }
+
   }, {
     key: "render",
     value: function render() {
@@ -708,7 +763,7 @@ var StylesReducer = function StylesReducer() {
 
   switch (action.type) {
     case _actions_styles_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_STYLE:
-      // debugger
+      debugger;
       return action.style;
 
     default:

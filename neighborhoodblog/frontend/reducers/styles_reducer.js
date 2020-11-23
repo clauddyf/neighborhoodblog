@@ -6,7 +6,7 @@ const StylesReducer = (state = {}, action) => {
     let newstate = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_STYLE:
-            // debugger
+            debugger
             return action.style
         default:
             return state;

@@ -2,15 +2,29 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
+
 export class MapShow extends Component {
     constructor(props){
-        debugger
         super(props);
-        this.styles = Styles.bind(this)
+        debugger
+        // this.styles = Styles.bind(this)
+        // this.pulledUp = false;
     }
     componentDidMount(){
+        debugger
+        // this.pulledUp = true;
+        // if(this.pulledUp){
+        //     this.props.fetchStyle(this.props.match.params.id)
+        // }
         this.props.fetchStyle(this.props.match.params.id)
+        debugger
     }
+
+    // componentWillUnmount(){
+    //     debugger
+    //     this.pulledUp = false;
+    // }
+
     render() {
         debugger
         

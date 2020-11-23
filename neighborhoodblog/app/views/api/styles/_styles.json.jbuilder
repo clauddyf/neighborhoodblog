@@ -1,1 +1,1 @@
-json.extract! style, :name, :json
+json.extract! style, :id, :name, :json

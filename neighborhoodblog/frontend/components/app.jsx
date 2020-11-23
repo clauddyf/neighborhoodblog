@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect, Switch, Link, withRouter } from 'react-router-dom';
-import MapsContent from './maps/map_show'
+import MapsContent from './maps/map_container'
 
 
 const App = () => {
