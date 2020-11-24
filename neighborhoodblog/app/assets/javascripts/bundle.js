@@ -770,7 +770,7 @@ var StylesReducer = function StylesReducer() {
   switch (action.type) {
     case _actions_styles_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_STYLE:
       debugger;
-      var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, oldState, _defineProperty({}, action.style.id, action.style));
+      var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, oldState, _defineProperty({}, action.style.style.id, action.style));
       debugger;
       return newState;
 
