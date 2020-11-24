@@ -462,10 +462,19 @@ var MapShow = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       debugger;
+      var pickedStyle;
+
+      if (jQuery.isEmptyObject(this.props.currentStyle)) {
+        pickedStyle = [];
+      } else {
+        pickedStyle = this.props.currentStyle[1].style.json;
+      }
+
+      debugger;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_1__.Map, {
         google: this.props.google,
         zoom: 14,
-        styles: this.props.currentStyle,
+        styles: pickedStyle,
         initialCenter: {
           lat: 38.9072,
           lng: -77.0369

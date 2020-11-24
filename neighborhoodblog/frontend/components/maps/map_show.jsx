@@ -27,13 +27,20 @@ export class MapShow extends Component {
 
     render() {
         debugger
-        
+        let pickedStyle;
+
+        if(jQuery.isEmptyObject(this.props.currentStyle)){
+            pickedStyle = []
+        } else {
+            pickedStyle = this.props.currentStyle[1].style.json
+        }
+        debugger
         return (
             
             <Map
                 google={this.props.google}
                 zoom={14}
-                styles={this.props.currentStyle}
+                styles={pickedStyle}
                 initialCenter={
                     {
                         lat: 38.9072,
