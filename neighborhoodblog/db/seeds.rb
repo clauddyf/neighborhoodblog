@@ -15,7 +15,7 @@
 
 require 'open-uri'
 require 'csv'
-
+# Style.destroy_all
 ## First seed of Hbn    
 # gardens = Hbn.new(hbn_name:'Da Gardens',city_id:1, longitude:'38.880722', latitude:'-76.989542')
 # gardens.save!

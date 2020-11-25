@@ -32,7 +32,7 @@ export class MapShow extends Component {
         if(jQuery.isEmptyObject(this.props.currentStyle)){
             pickedStyle = []
         } else {
-            pickedStyle = this.props.currentStyle[1].style.json
+            pickedStyle = (this.props.currentStyle[1].json).split(/(\[[A-Z]\]\[\/[A-Z]\])/g)
         }
         debugger
         return (

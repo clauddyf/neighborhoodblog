@@ -9,7 +9,7 @@ const StylesReducer = (oldState = {}, action) => {
     switch (action.type) {
         case RECEIVE_STYLE:
             debugger
-            let newState = merge({}, oldState, { [action.style.style.id]: action.style });
+            let newState = merge({}, oldState, { [action.style.style.id]: action.style.style });
             debugger
             return newState
         default:

@@ -467,7 +467,7 @@ var MapShow = /*#__PURE__*/function (_Component) {
       if (jQuery.isEmptyObject(this.props.currentStyle)) {
         pickedStyle = [];
       } else {
-        pickedStyle = this.props.currentStyle[1].style.json;
+        pickedStyle = this.props.currentStyle[1].json.split(/(\[[A-Z]\]\[\/[A-Z]\])/g);
       }
 
       debugger;
@@ -779,7 +779,7 @@ var StylesReducer = function StylesReducer() {
   switch (action.type) {
     case _actions_styles_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_STYLE:
       debugger;
-      var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, oldState, _defineProperty({}, action.style.style.id, action.style));
+      var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, oldState, _defineProperty({}, action.style.style.id, action.style.style));
       debugger;
       return newState;
 
