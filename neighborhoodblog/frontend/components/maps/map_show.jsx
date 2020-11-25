@@ -6,9 +6,10 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 export class MapShow extends Component {
     constructor(props){
         super(props);
-        debugger
+        // debugger
         // this.styles = Styles.bind(this)
         // this.pulledUp = false;
+        this.styleStrToArray = this.styleStrToArray.bind(this)
     }
     componentDidMount(){
         debugger
@@ -16,14 +17,20 @@ export class MapShow extends Component {
         // if(this.pulledUp){
         //     this.props.fetchStyle(this.props.match.params.id)
         // }
-        this.props.fetchStyle(1)
+        this.props.fetchStyle(5)
         debugger
     }
 
-    // componentWillUnmount(){
-    //     debugger
-    //     this.pulledUp = false;
-    // }
+    styleStrToArray(str){
+    for (let i = 0; i < str.length; i++) {
+        debugger
+        str[i] = str[i].replace(/"/g, "")
+    }
+
+    return str 
+    }
+
+
 
     render() {
         debugger
@@ -32,7 +39,7 @@ export class MapShow extends Component {
         if(jQuery.isEmptyObject(this.props.currentStyle)){
             pickedStyle = []
         } else {
-            pickedStyle = (this.props.currentStyle[1].json).split(/(\[[A-Z]\]\[\/[A-Z]\])/g)
+            pickedStyle = this.styleStrToArray(this.props.currentStyle[5].json)
         }
         debugger
         return (
@@ -56,4 +63,7 @@ export default GoogleApiWrapper({
     
     apiKey: `${window.googleAPIKey}`
 })(MapShow);
+
+
+
 

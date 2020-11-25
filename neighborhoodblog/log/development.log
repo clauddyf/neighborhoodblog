@@ -2205,3 +2205,405 @@ Migrating to ChangeColumnOnStyles (20201124231216)
   ↳ bin/rails:9
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Load (0.7ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[36mStyle Load (0.7ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Load (0.8ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[35m (21.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeAgainStyles (20201125015139)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (42.1ms)[0m  [1m[35mALTER TABLE "styles" DROP COLUMN "json1"[0m
+  ↳ db/migrate/20201125015139_change_again_styles.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "styles" ADD "json" character varying[0m
+  ↳ db/migrate/20201125015139_change_again_styles.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201125015139"]]
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Create (43.3ms)[0m  [1m[32mINSERT INTO "styles" ("name", "created_at", "updated_at", "json") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "One"], ["created_at", "2020-11-25 01:58:25.593993"], ["updated_at", "2020-11-25 01:58:25.593993"], ["json", "[\n            {\n                featureType: \"all\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"saturation\": \"-100\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"saturation\": 36\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 40\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 17\n                    },\n                    {\n                        \"weight\": 1.2\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape.natural\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"lightness\": 21\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 29\n                    },\n                    {\n                        \"weight\": 0.2\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 18\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"transit\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 19\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            }\n        ]"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Create (0.6ms)[0m  [1m[32mINSERT INTO "styles" ("name", "created_at", "updated_at", "json") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Two"], ["created_at", "2020-11-25 01:58:25.640668"], ["updated_at", "2020-11-25 01:58:25.640668"], ["json", "[\n            {\n                featureType: \"all\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"saturation\": \"-100\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"saturation\": 36\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 40\n                    },\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 17\n                    },\n                    {\n                        \"weight\": 1.2\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape.natural\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"lightness\": 21\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 29\n                    },\n                    {\n                        \"weight\": 0.2\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 18\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"transit\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 19\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            }\n        ]"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "styles"[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-11-24 18:00:48 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/claudiussolomon/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3419ms (Views: 3408.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 18:00:53 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/1" for ::1 at 2020-11-24 18:01:02 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStyle Load (0.8ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+Completed 404 Not Found in 63ms (ActiveRecord: 52.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Style with 'id'=1:
+  app/controllers/api/styles_controller.rb:3:in `show'
+
+Started GET "/api/styles/1" for ::1 at 2020-11-24 18:01:19 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Style with 'id'=1:
+  app/controllers/api/styles_controller.rb:3:in `show'
+
+Started POST "/__better_errors/cc2965b349a46304/variables" for ::1 at 2020-11-24 18:01:19 -0800
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStyle Load (0.3ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-11-24 18:02:20 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 395ms (Views: 391.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/3" for ::1 at 2020-11-24 18:02:32 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mStyle Load (0.6ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.4ms)
+  Rendered api/styles/show.json.jbuilder (3.4ms)
+Completed 200 OK in 37ms (Views: 14.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 18:03:12 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 386ms (Views: 383.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/3" for ::1 at 2020-11-24 18:03:24 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mStyle Load (0.8ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.5ms)
+  Rendered api/styles/show.json.jbuilder (3.5ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 18:05:04 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 551ms (Views: 548.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/3" for ::1 at 2020-11-24 18:05:33 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.4ms)
+  Rendered api/styles/show.json.jbuilder (3.3ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mStyle Load (0.7ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Destroy (0.5ms)[0m  [1m[31mDELETE FROM "styles" WHERE "styles"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:18
+  [1m[35m (27.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Destroy (0.3ms)[0m  [1m[31mDELETE FROM "styles" WHERE "styles"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Load (0.6ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Create (0.9ms)[0m  [1m[32mINSERT INTO "styles" ("name", "created_at", "updated_at", "json") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "One"], ["created_at", "2020-11-25 02:07:42.982045"], ["updated_at", "2020-11-25 02:07:42.982045"], ["json", "[\n            {\n                featureType: \"all\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"saturation\": \"-100\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"saturation\": 36\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 40\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 17\n                    },\n                    {\n                        \"weight\": 1.2\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape.natural\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"lightness\": 21\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 29\n                    },\n                    {\n                        \"weight\": 0.2\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 18\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"transit\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 19\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            }\n        ]"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mStyle Create (0.7ms)[0m  [1m[32mINSERT INTO "styles" ("name", "created_at", "updated_at", "json") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Two"], ["created_at", "2020-11-25 02:07:43.025215"], ["updated_at", "2020-11-25 02:07:43.025215"], ["json", "[\n            {\n                featureType: \"all\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"saturation\": \"-100\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"saturation\": 36\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 40\n                    },\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    },\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"all\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"administrative\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 17\n                    },\n                    {\n                        \"weight\": 1.2\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 20\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"landscape.natural\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"lightness\": 21\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"poi\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#4d6059\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"visibility\": \"on\"\n                    },\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"road.highway\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    },\n                    {\n                        \"lightness\": 29\n                    },\n                    {\n                        \"weight\": 0.2\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 18\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.arterial\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 16\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"road.local\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#7f8d89\"\n                    }\n                ]\n            },\n            {\n                featureType: \"transit\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#000000\"\n                    },\n                    {\n                        \"lightness\": 19\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"all\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"visibility\": \"on\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry\",\n                stylers: [\n                    {\n                        \"color\": \"#2b3638\"\n                    },\n                    {\n                        \"lightness\": 17\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.fill\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"geometry.stroke\",\n                stylers: [\n                    {\n                        \"color\": \"#24282b\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.fill\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.text.stroke\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            },\n            {\n                featureType: \"water\",\n                elementType: \"labels.icon\",\n                stylers: [\n                    {\n                        \"visibility\": \"off\"\n                    }\n                ]\n            }\n        ]"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "styles"[0m
+  ↳ db/seeds.rb:39
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.5ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.3ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" ORDER BY "styles"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+Started GET "/" for ::1 at 2020-11-24 18:10:00 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 433ms (Views: 430.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/5" for ::1 at 2020-11-24 18:10:09 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mStyle Load (0.7ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.4ms)
+  Rendered api/styles/show.json.jbuilder (2.7ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 18:10:37 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 453ms (Views: 450.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/5" for ::1 at 2020-11-24 18:10:55 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.3ms)
+  Rendered api/styles/show.json.jbuilder (2.3ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-11-24 18:12:58 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 410ms (Views: 407.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/styles/5" for ::1 at 2020-11-24 18:13:03 -0800
+Processing by Api::StylesController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT  "styles".* FROM "styles" WHERE "styles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/styles_controller.rb:3
+  Rendering api/styles/show.json.jbuilder
+  Rendered api/styles/_style.json.jbuilder (0.3ms)
+  Rendered api/styles/show.json.jbuilder (3.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mStyle Load (0.7ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Destroy (26.9ms)[0m  [1m[31mDELETE FROM "styles" WHERE "styles"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Destroy (0.2ms)[0m  [1m[31mDELETE FROM "styles" WHERE "styles"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[36mStyle Load (0.6ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[36mStyle Load (0.6ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[36mCity Load (43.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  [1m[36mHbn Load (23.8ms)[0m  [1m[34mSELECT "hbns".* FROM "hbns"[0m
+  [1m[36mUser Load (42.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mArtist Load (42.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mHbn Load (0.4ms)[0m  [1m[34mSELECT "hbns".* FROM "hbns"[0m
+  [1m[36mHbn Load (0.3ms)[0m  [1m[34mSELECT  "hbns".* FROM "hbns" ORDER BY "hbns"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mStyle Load (0.4ms)[0m  [1m[34mSELECT "styles".* FROM "styles"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeAgainStyles (20201125015139)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (42.2ms)[0m  [1m[35mALTER TABLE "styles" DROP COLUMN "json"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "styles" ADD "json1" text[] DEFAULT '{}'[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201125015139"]]
+  ↳ bin/rails:9
+  [1m[35m (42.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeAgainStyles (20201125015139)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "styles" ADD "json" character varying[0m
+  ↳ db/migrate/20201125015139_change_again_styles.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "styles" DROP COLUMN "json1"[0m
+  ↳ db/migrate/20201125015139_change_again_styles.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (26.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201125015139"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeAgainStyles (20201125015139)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (24.9ms)[0m  [1m[35mALTER TABLE "styles" ADD "json1" text[] DEFAULT '{}'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "styles" DROP COLUMN "json"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201125015139"]]
+  ↳ bin/rails:9
+  [1m[35m (36.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeAgainStyles (20201125015139)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201125015139"]]
+  ↳ bin/rails:9
+  [1m[35m (21.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1738769978183565285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCity Load (41.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mHbn Create (1.0ms)[0m  [1m[32mINSERT INTO "hbns" ("hbn_name", "city_id", "longitude", "latitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["hbn_name", "Da Gardens"], ["city_id", 1], ["longitude", 38], ["latitude", -76], ["created_at", "2020-11-25 02:28:59.706708"], ["updated_at", "2020-11-25 02:28:59.706708"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21

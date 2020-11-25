@@ -370,7 +370,6 @@ var mSTP = function mSTP(state, ownProps) {
 };
 
 var mDTP = function mDTP(dispatch) {
-  debugger;
   return {
     fetchStyle: function fetchStyle(style) {
       return dispatch((0,_actions_styles_actions__WEBPACK_IMPORTED_MODULE_1__.fetchStyle)(style));
@@ -436,10 +435,11 @@ var MapShow = /*#__PURE__*/function (_Component) {
 
     _classCallCheck(this, MapShow);
 
-    _this = _super.call(this, props);
-    debugger; // this.styles = Styles.bind(this)
+    _this = _super.call(this, props); // debugger
+    // this.styles = Styles.bind(this)
     // this.pulledUp = false;
 
+    _this.styleStrToArray = _this.styleStrToArray.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -451,13 +451,19 @@ var MapShow = /*#__PURE__*/function (_Component) {
       //     this.props.fetchStyle(this.props.match.params.id)
       // }
 
-      this.props.fetchStyle(1);
+      this.props.fetchStyle(5);
       debugger;
-    } // componentWillUnmount(){
-    //     debugger
-    //     this.pulledUp = false;
-    // }
+    }
+  }, {
+    key: "styleStrToArray",
+    value: function styleStrToArray(str) {
+      for (var i = 0; i < str.length; i++) {
+        debugger;
+        str[i] = str[i].replace(/"/g, "");
+      }
 
+      return str;
+    }
   }, {
     key: "render",
     value: function render() {
@@ -467,7 +473,7 @@ var MapShow = /*#__PURE__*/function (_Component) {
       if (jQuery.isEmptyObject(this.props.currentStyle)) {
         pickedStyle = [];
       } else {
-        pickedStyle = this.props.currentStyle[1].json.split(/(\[[A-Z]\]\[\/[A-Z]\])/g);
+        pickedStyle = this.styleStrToArray(this.props.currentStyle[5].json);
       }
 
       debugger;
@@ -778,7 +784,7 @@ var StylesReducer = function StylesReducer() {
 
   switch (action.type) {
     case _actions_styles_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_STYLE:
-      debugger;
+      // debugger
       var newState = lodash_merge__WEBPACK_IMPORTED_MODULE_1___default()({}, oldState, _defineProperty({}, action.style.style.id, action.style.style));
       debugger;
       return newState;

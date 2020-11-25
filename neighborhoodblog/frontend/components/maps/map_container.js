@@ -13,7 +13,6 @@ const mSTP = (state, ownProps) => {
 }
 
 const mDTP = dispatch => {
-    debugger 
     return {
         fetchStyle: style => dispatch(fetchStyle(style)),
     };

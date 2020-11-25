@@ -16,24 +16,29 @@
 require 'open-uri'
 require 'csv'
 # Style.destroy_all
-## First seed of Hbn    
-# gardens = Hbn.new(hbn_name:'Da Gardens',city_id:1, longitude:'38.880722', latitude:'-76.989542')
-# gardens.save!
-# puts "successfuly seeded first hbn"
+# First seed of Hbn    
+gardens = Hbn.new(hbn_name:'Da Gardens',city_id:1, longitude:'38.880722', latitude:'-76.989542')
+gardens.save!
+puts "successfuly seeded first hbn"
 
 ## First seed of Artist
 # glizzy = Artist.new(city_id: 1, hbn_id: 1, rap_name:'Ant Glizzy', birth_name:'Antwon Evans')
 # glizzy.save!
 # puts "successfuly seeded first artist"
 
-# csv_text = File.read(Rails.root.join('db','lib','firstseed.csv'))
-# csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-# csv.each do |row|
-#     t = Style.new
+csv_text = File.read(Rails.root.join('db','lib','firstseed.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv.each do |row|
+    t = Style.new
 
-#     t.name = row['Name']
-#     t.json = row['JSON']
-#     t.save!
-#     puts "#{t.name} saved"
+    t.name = row['Name']
+    t.json = row['JSON']
+    t.save!
+    puts "#{t.name} saved"
+end
+puts "There are now #{Style.count} rows in the MapStyles table"
+
+# t.json1.each do |char|
+#     char = 
+
 # end
-# puts "There are now #{Style.count} rows in the MapStyles table"
