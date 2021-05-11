@@ -11,7 +11,7 @@
     "css-loader": "^5.0.1",
     "google-maps-react": "^2.0.6",
     "loader": "^2.1.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-datepicker": "^3.3.0",
